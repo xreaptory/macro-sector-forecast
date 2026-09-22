@@ -7,3 +7,12 @@ Macro-suprise-driven sector rotation and country growth forecasting, from FRED/W
 - Venv
 - sdmx1 (python lib)
 - msal (python lib)
+
+## Setup
+
+- setup venv
+    - python -m venv .venv
+    - ./.venv/bin/activate.ps1/bat/ etc ...
+- install deps
+    - pip install sdmx1
+    - pip install msal
