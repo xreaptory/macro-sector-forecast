@@ -7,6 +7,7 @@ Macro-suprise-driven sector rotation and country growth forecasting, from FRED/W
 - Venv
 - sdmx1 (python lib)
 - msal (python lib)
+- requests (python lib)
 
 ## Setup
 
