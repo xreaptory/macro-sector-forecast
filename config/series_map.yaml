@@ -1,0 +1,167 @@
+# Canonical macro indicators and their identifiers in each supported source.
+# FRED identifiers are series IDs; Eurostat identifiers are dataset codes;
+# OECD identifiers are SDMX dataflow/measure codes and may require the
+# geography and frequency dimensions for the selected country.
+
+series:
+  gdp_growth:
+    name: Real GDP growth
+    unit: percent
+    frequency: quarterly
+    fred:
+      code: A191RL1Q225SBEA
+      geography: US
+    eurostat:
+      code: namq_10_gdp
+      dimensions:
+        na_item: B1GQ
+        unit: CLV10_MEUR
+    oecd:
+      code: QNA
+      measure: GROWTH
+      unit: PC_CHGP
+  inflation:
+    name: Consumer price inflation
+    unit: percent
+    frequency: monthly
+    fred:
+      code: CPIAUCSL
+      geography: US
+    eurostat:
+      code: prc_hicp_manr
+      dimensions:
+        coicop: CP00
+        unit: RCH_A
+    oecd:
+      code: PRICES
+      measure: CPI
+      unit: GROWTH
+  unemployment_rate:
+    name: Unemployment rate
+    unit: percent
+    frequency: monthly
+    fred:
+      code: UNRATE
+      geography: US
+    eurostat:
+      code: une_rt_m
+      dimensions:
+        sex: T
+        age: Y15-74
+        unit: PC_ACT
+    oecd:
+      code: LFS_SEXAGE
+      measure: UNEMP
+      unit: PC_LF
+  policy_rate:
+    name: Central bank policy rate
+    unit: percent
+    frequency: daily
+    fred:
+      code: FEDFUNDS
+      geography: US
+    eurostat:
+      code: IRS_H
+      dimensions:
+        ir_type: IRS.M
+        maturity: IRS.M
+    oecd:
+      code: MEI
+      measure: IR3TIB
+      unit: PC_PA
+  government_bond_10y:
+    name: Ten-year government bond yield
+    unit: percent
+    frequency: daily
+    fred:
+      code: DGS10
+      geography: US
+    eurostat:
+      code: IRS_LT_M
+      dimensions:
+        ir_type: IRS_LT
+        maturity: M10
+    oecd:
+      code: MEI
+      measure: IRLT
+      unit: PC_PA
+  industrial_production:
+    name: Industrial production index
+    unit: index
+    frequency: monthly
+    fred:
+      code: INDPRO
+      geography: US
+    eurostat:
+      code: sts_inpr_m
+      dimensions:
+        nace_r2: C
+        unit: I15
+    oecd:
+      code: MEI
+      measure: PRMNTO01
+      unit: IX
+  retail_sales:
+    name: Retail sales volume index
+    unit: index
+    frequency: monthly
+    fred:
+      code: RSAFS
+      geography: US
+    eurostat:
+      code: sts_trtu_m
+      dimensions:
+        indic_bt: VOLUME
+        nace_r2: G47
+        unit: I15
+    oecd:
+      code: MEI
+      measure: SLRTTO01
+      unit: IX
+  consumer_confidence:
+    name: Consumer confidence
+    unit: index
+    frequency: monthly
+    fred:
+      code: UMCSENT
+      geography: US
+    eurostat:
+      code: ei_bsco_m
+      dimensions:
+        indic: BCS
+    oecd:
+      code: MEI
+      measure: CSCICP03
+      unit: AMPLITUD
+  exports:
+    name: Exports of goods and services
+    unit: national currency
+    frequency: quarterly
+    fred:
+      code: EXPGS
+      geography: US
+    eurostat:
+      code: namq_10_exi
+      dimensions:
+        na_item: P6
+        unit: CP_MEUR
+    oecd:
+      code: QNA
+      measure: EXPGS
+      unit: V
+  imports:
+    name: Imports of goods and services
+    unit: national currency
+    frequency: quarterly
+    fred:
+      code: IMPGS
+      geography: US
+    eurostat:
+      code: namq_10_exi
+      dimensions:
+        na_item: P7
+        unit: CP_MEUR
+    oecd:
+      code: QNA
+      measure: IMPGS
+      unit: V

@@ -1,0 +1,154 @@
+# Geographic universe used by the forecasting pipeline.
+# Countries use ISO 3166-1 alpha-2/alpha-3 codes. Aggregates use the
+# provider-specific codes documented in provider_codes because most
+# aggregates do not have ISO 3166 codes.
+
+countries:
+  - id: US
+    name: United States
+    iso2: US
+    iso3: USA
+  - id: CA
+    name: Canada
+    iso2: CA
+    iso3: CAN
+  - id: MX
+    name: Mexico
+    iso2: MX
+    iso3: MEX
+  - id: BR
+    name: Brazil
+    iso2: BR
+    iso3: BRA
+  - id: AR
+    name: Argentina
+    iso2: AR
+    iso3: ARG
+  - id: CL
+    name: Chile
+    iso2: CL
+    iso3: CHL
+  - id: GB
+    name: United Kingdom
+    iso2: GB
+    iso3: GBR
+  - id: DE
+    name: Germany
+    iso2: DE
+    iso3: DEU
+  - id: FR
+    name: France
+    iso2: FR
+    iso3: FRA
+  - id: IT
+    name: Italy
+    iso2: IT
+    iso3: ITA
+  - id: ES
+    name: Spain
+    iso2: ES
+    iso3: ESP
+  - id: NL
+    name: Netherlands
+    iso2: NL
+    iso3: NLD
+  - id: CH
+    name: Switzerland
+    iso2: CH
+    iso3: CHE
+  - id: SE
+    name: Sweden
+    iso2: SE
+    iso3: SWE
+  - id: NO
+    name: Norway
+    iso2: NO
+    iso3: NOR
+  - id: PL
+    name: Poland
+    iso2: PL
+    iso3: POL
+  - id: TR
+    name: Türkiye
+    iso2: TR
+    iso3: TUR
+  - id: RU
+    name: Russia
+    iso2: RU
+    iso3: RUS
+  - id: CN
+    name: China
+    iso2: CN
+    iso3: CHN
+  - id: JP
+    name: Japan
+    iso2: JP
+    iso3: JPN
+  - id: KR
+    name: South Korea
+    iso2: KR
+    iso3: KOR
+  - id: IN
+    name: India
+    iso2: IN
+    iso3: IND
+  - id: AU
+    name: Australia
+    iso2: AU
+    iso3: AUS
+  - id: NZ
+    name: New Zealand
+    iso2: NZ
+    iso3: NZL
+  - id: ID
+    name: Indonesia
+    iso2: ID
+    iso3: IDN
+  - id: SG
+    name: Singapore
+    iso2: SG
+    iso3: SGP
+  - id: ZA
+    name: South Africa
+    iso2: ZA
+    iso3: ZAF
+  - id: SA
+    name: Saudi Arabia
+    iso2: SA
+    iso3: SAU
+
+unions:
+  - id: EU
+    name: European Union
+    iso2: EU
+    iso3: null
+    provider_codes:
+      eurostat: EU27_2020
+      oecd: EU27
+      fred: EU
+  - id: EA
+    name: Euro area
+    iso2: EA
+    iso3: null
+    provider_codes:
+      eurostat: EA20
+      oecd: EA19
+      fred: EZ
+  - id: G7
+    name: Group of Seven
+    iso2: null
+    iso3: null
+    members: [CA, FR, DE, IT, JP, GB, US]
+  - id: G20
+    name: Group of Twenty
+    iso2: null
+    iso3: null
+    members: [AR, AU, BR, CA, CN, FR, DE, IN, ID, IT, JP, MX, RU, SA, ZA, KR, TR, GB, US, EU]
+  - id: OECD
+    name: OECD total
+    iso2: null
+    iso3: null
+    provider_codes:
+      eurostat: OECD
+      oecd: OECD
+      fred: OECD

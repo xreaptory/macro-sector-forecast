@@ -1,0 +1,70 @@
+# GICS sectors and the corresponding SPDR Select Sector ETF.
+# ETF tickers are US-listed proxies for total-sector equity performance.
+
+sectors:
+  communication_services:
+    gics_code: "50"
+    gics_name: Communication Services
+    etf:
+      provider: SPDR
+      ticker: XLC
+  consumer_discretionary:
+    gics_code: "25"
+    gics_name: Consumer Discretionary
+    etf:
+      provider: SPDR
+      ticker: XLY
+  consumer_staples:
+    gics_code: "30"
+    gics_name: Consumer Staples
+    etf:
+      provider: SPDR
+      ticker: XLP
+  energy:
+    gics_code: "10"
+    gics_name: Energy
+    etf:
+      provider: SPDR
+      ticker: XLE
+  financials:
+    gics_code: "40"
+    gics_name: Financials
+    etf:
+      provider: SPDR
+      ticker: XLF
+  health_care:
+    gics_code: "35"
+    gics_name: Health Care
+    etf:
+      provider: SPDR
+      ticker: XLV
+  industrials:
+    gics_code: "20"
+    gics_name: Industrials
+    etf:
+      provider: SPDR
+      ticker: XLI
+  information_technology:
+    gics_code: "45"
+    gics_name: Information Technology
+    etf:
+      provider: SPDR
+      ticker: XLK
+  materials:
+    gics_code: "15"
+    gics_name: Materials
+    etf:
+      provider: SPDR
+      ticker: XLB
+  real_estate:
+    gics_code: "60"
+    gics_name: Real Estate
+    etf:
+      provider: SPDR
+      ticker: XLRE
+  utilities:
+    gics_code: "55"
+    gics_name: Utilities
+    etf:
+      provider: SPDR
+      ticker: XLU
